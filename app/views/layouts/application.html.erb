@@ -5,8 +5,21 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
+<!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <ul>
+    <li><a href="about.asp">Contact</a></li>
+    <li><a href="contact.asp">Blog</a></li>
+    <li><a href="news.asp">About</a></li>
+    <li><a href="default.asp">Home</a></li>
+    <i class="fa fa-twitter" aria-hidden="true"><span>CodePen</span></i>
+    <i class="fa fa-camera-retro"></i> fa-camera-retro
+  </ul>
+</nav>
 
 <%= yield %>
 
